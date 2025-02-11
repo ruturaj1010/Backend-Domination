@@ -1,0 +1,24 @@
+<%- include("includes/head.ejs") %>
+
+<body>
+    <h1>Hii, my account username is <%= data.name %></h1>
+
+    <div style="display: flex; gap: 12px; margin-bottom:5px;">
+        <Button>Following <%= data.following %></Button>
+        <Button>Followers <%= data.followers %></Button>
+    </div>
+
+    <% for(post of data.posts) { %>
+        <div style="display: flex; flex-direction:column; gap:8px;">
+            <img style="height: 12vh; width:fit-content" src=<%= post.image %> alt="">
+    
+            <div>
+                <p>Comments: <%= post.comments %></p>
+                <p>Likes: <%= post.likes %></p>
+            </div>
+        </div>
+    <% } %>
+
+</body>
+
+</html>

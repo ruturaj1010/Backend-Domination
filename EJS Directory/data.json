@@ -1,0 +1,49 @@
+{
+    "cats": {
+      "name": "cats",
+      "followers": 25000,
+      "following": 5,
+      "posts": [
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg",
+          "likes": 200,
+          "comments": 17
+        },
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg",
+          "likes": 312,
+          "comments": 19
+        },
+        {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg",
+          "likes": 1065,
+          "comments": 200
+        }
+      ]
+    },
+
+    "dogs": {
+      "name": "Dogs",
+      "followers": 85000,
+      "following": 110,
+      "posts": [
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NY09lpUBneuPC7s-x88RHEFrF_tFaL1Stw&s",
+          "likes": 2100,
+          "comments": 171
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NY09lpUBneuPC7s-x88RHEFrF_tFaL1Stw&s",
+          "likes": 1312,
+          "comments": 119
+        },
+        {
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6NY09lpUBneuPC7s-x88RHEFrF_tFaL1Stw&s",
+          "likes": 11065,
+          "comments": 200
+        }
+      ]
+    }
+    
+  }
+  
