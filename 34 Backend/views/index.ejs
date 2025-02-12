@@ -16,11 +16,13 @@
                 <p> <%= post.content %></p>
 
                 <div class="links">
-                    <a href="http://localhost:8080/posts/<%=post.id%>">view in details</a>
-                    <a href="#">edit post</a>
+                    <a href="http://localhost:8080/posts/<%=post.id%>">View in details</a>
+                    <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit post</a>
                 </div>
 
-                <button class="delBtn">Delete post</button>
+                <form action="/posts/<%=post.id%>?_method=DELETE" method="post">
+                    <button class="delBtn">Delete post</button>
+                </form>
             </div>
         <% } %>
 
