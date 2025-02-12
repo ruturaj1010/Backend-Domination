@@ -37,6 +37,7 @@ body {
     border: 2px solid blueviolet;
     border-radius: 6px;
     margin-top: 3px;
+    cursor: pointer;
 }
 
 .newpostBtn {
