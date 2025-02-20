@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 4rem;
+    background-color: white;
+    margin-bottom: 2vh;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #1e1d1d !important;
+}
+
+footer {
+    background-color: rgb(202, 196, 196);
+    text-align: center;
+    height: 12vh;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-socials {
+    padding: 6px 0;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.f-info-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+}
+
+/* cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.card {
+    border: none !important;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    height: 300px !important;
+    width: 290px !important;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 100% !important;
+    height: 32vh !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.cards a {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
