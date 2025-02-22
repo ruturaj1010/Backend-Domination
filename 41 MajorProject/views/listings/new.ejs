@@ -2,43 +2,44 @@
     <div class="row">
         <div class="col-8 offset-2">
             <body>
-                <form action="/listings" method="post">
+                <form action="/listings" method="post" novalidate class="needs-validation" >
                     <div class="mb-3">
                         <label class="form-label" for="title">Title: </label>
                         <input class="form-control " type="text" id="title" name="listing[title]"
                             placeholder="Enter title" required>
+                        <div class="valid-feedback">good!</div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="description">Description: </label><br>
                         <textarea class="form-control " name="listing[description]" id="description" rows="3" cols="45"
-                            placeholder="Enter description"></textarea>
+                            placeholder="Enter description" required></textarea>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="image">Image: </label>
                         <input class="form-control " name="listing[image]" id="image"
-                            placeholder="Enter image url/Link">
+                            placeholder="Enter image url/Link" required>
                     </div>
 
                     <div class="row">
                         <div class="col-md-5 mb-3">
                             <label class="form-label" for="price">Price: </label>
                             <input class="form-control " type="number" name="listing[price]" id="price"
-                            placeholder="Enter price in rupees">
+                            placeholder="Enter price in rupees" required>
                         </div>
                         
                         <div class="col-md-7 mb-3">
                             <label class="form-label" for="country">Country: </label>
                             <input class="form-control " type="text" name="listing[country]" id="country"
-                            placeholder="Enter country">
+                            placeholder="Enter country" required>
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="location">Location: </label>
                         <input class="form-control " type="text" name="listing[location]" id="location"
-                            placeholder="Enter location">
+                            placeholder="Enter location" required>
                     </div>
 
                     <button class="mb-3 btn btn-info" type="submit">Create Item</button>
