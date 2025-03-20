@@ -11,13 +11,18 @@ const {
   deleteListing,
   updateListing,
 } = require("../controllers/listings.js");
+const multer = require("multer");
+const upload = multer({ dest: 'uploads/' });
 
 router
   .route("/")
   // index route
   .get(wrapAsync(index))
   // create route
-  .post(isLoggedIn, validateListing, wrapAsync(createListing));
+  // .post(isLoggedIn, validateListing, wrapAsync(createListing));
+  .post( upload.single("listing[image]") ,(req , res)=>{
+    res.send(req.file);
+  });
 
 // new route
 router.get("/new", isLoggedIn, renderNewForm);
@@ -27,9 +32,9 @@ router
   // show route
   .get(wrapAsync(showListing))
   // update route
-  .put( isLoggedIn, isOwner, wrapAsync(updateListing))
+  .put(isLoggedIn, isOwner, wrapAsync(updateListing))
   // delete route
-  .delete( isLoggedIn, isOwner, wrapAsync(deleteListing));
+  .delete(isLoggedIn, isOwner, wrapAsync(deleteListing));
 
 // read route
 router.get("/:id/edit", isLoggedIn, wrapAsync(renderEditForm));
