@@ -18,8 +18,12 @@
             </div>
 
             <div class="mb-3">
+                Original Listing Image: <br>
+                <img class="img-fluid" style="width: 200px; height: 200px;" src="<%= Originalimageurl %>" alt="image" />
+            </div>
+            <div class="mb-3">
                 <label class="form-label" for="image">Upload new image: </label>
-                <input class="form-control" name="listing[image]" id="image" type="file" value="<%= listing.image.url %>" >
+                <input class="form-control" name="listing[image]" id="image" type="file" >
             </div>
 
             <div class="row">
