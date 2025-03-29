@@ -65,6 +65,10 @@ app.use((req, res, next) => {
     next();
 });
 
+// app.get("/" , (req , res)=>{
+//     res.send("<h1>I am a root path.</h1>")
+// })
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/" , userRouter);
